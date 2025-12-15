@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aashna Shah | Managerial Economics & AI</title>
+
+  <!-- Google Font (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --primary: #1d4ed8;
+      --primary-soft: #e0ebff;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+
+    header {
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      font-size: 0.97rem;
+      color: var(--text-muted);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border);
+    }
+
+    .about {
+      display: flex;
+      gap: 24px;
+      padding: 24px;
+      align-items: flex-start;
+    }
+
+    .profile-photo {
+      flex: 0 0 180px;
+      max-width: 180px;
+      aspect-ratio: 4 / 5;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, #e5e7eb, #f3f4f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 8px;
+    }
+
+    .about-text h2 {
+      margin: 0 0 8px;
+      font-size: 1.3rem;
+    }
+
+    .about-text p {
+      margin: 0 0 8px;
+      font-size: 0.97rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sections {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .section-card {
+      padding: 24px 22px 22px;
+      text-align: left;
+    }
+
+    .section-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      font-size: 1.6rem;
+    }
+
+    .section-title {
+      margin: 0 0 6px;
+      font-weight: 600;
+    }
+
+    .section-desc {
+      margin: 0 0 18px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .primary-link {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-size: 0.93rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+      margin-right: 10px;
+      margin-top: 6px;
+    }
+
+    .primary-link:hover {
+      background: #1e40af;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.26);
+    }
+
+    .primary-link:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.22);
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .profile-photo {
+        width: 150px;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Aashna Shah</h1>
+      <p>Undergraduate Student, Finance and Managerial Economics | University of Massachusetts Amherst</p>
+    </header>
+
+    <section class="card about">
+      <div class="profile-photo">
+        Profile photo<br>(replace this box with an image)
+      </div>
+
+      <div class="about-text">
+        <h2>About Me</h2>
+
+        <p>
+          Welcome! I'm a Managerial Economics student at UMass Amherst with a strong interest in
+          artificial intelligence, data analysis, and their applications in business and economics.
+        </p>
+
+        <p>
+          I enjoy using data-driven insights and emerging technologies to understand markets,
+          evaluate decisions, and solve complex problems. This site highlights my coursework,
+          projects, and experience at the intersection of economics and AI.
+        </p>
+
+        <p>
+          Feel free to explore my resume and class projects below to learn more about my background.
+        </p>
+      </div>
+    </section>
+
+    <section class="sections">
+
+      <!-- RESUME CARD -->
+      <article class="card section-card">
+        <div class="section-icon" aria-hidden="true">📄</div>
+        <h3 class="section-title">Resume</h3>
+        <p class="section-desc">
+          View my academic background, work experience, and skills related to economics, data analysis, and AI.
+        </p>
+
+        <!-- VIEW RESUME -->
+        <a class="primary-link" href="Aashna Shah_Resume.pdf" target="_blank" rel="noopener">
+          View Resume
+        </a>
+
+        <!-- DOWNLOAD RESUME -->
+        <a class="primary-link" href="Aashna Shah_Resume.pdf" download>
+          Download Resume
+        </a>
+      </article>
+
+      <!-- PROJECTS CARD -->
+      <article class="card section-card">
+        <div class="section-icon" aria-hidden="true">💻</div>
+        <h3 class="section-title">Projects</h3>
+        <p class="section-desc">
+          Explore my AI in Economics class project and other academic work applying AI and data to real problems.
+        </p>
+        <a class="primary-link" href="project.html">
+          View Projects
+        </a>
+      </article>
+
+    </section>
+
+    <footer>
+      ©️ 2025 Aashna Shah
+    </footer>
+  </div>
+</body>
+</html>
