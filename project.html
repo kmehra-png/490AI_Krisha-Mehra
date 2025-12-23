@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Class Project | <!-- TODO: Your name -->Your Name</title>
+  <title>AI Class Project | Krisha Mehra</title>
 
-  <!-- Google Font (optional – matches main page) -->
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,17 +20,14 @@
       --text-muted: #6b7280;
       --border: #e5e7eb;
       --radius-lg: 18px;
-      --radius-md: 12px;
       --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Inter", system-ui, sans-serif;
       background: var(--bg);
       color: var(--text-main);
     }
@@ -41,15 +38,6 @@
       padding: 24px 16px 56px;
     }
 
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     .back-link {
       display: inline-flex;
       align-items: center;
@@ -57,17 +45,13 @@
       font-size: 0.9rem;
       color: var(--text-muted);
       margin-bottom: 16px;
-    }
-
-    .back-link span {
-      font-size: 1.1rem;
+      text-decoration: none;
     }
 
     header h1 {
       margin: 0 0 4px;
       font-size: clamp(2rem, 3vw, 2.4rem);
       font-weight: 700;
-      letter-spacing: -0.03em;
     }
 
     header p {
@@ -85,17 +69,10 @@
 
     .project-overview {
       padding: 24px;
-      margin-top: 20px;
-      margin-bottom: 28px;
-    }
-
-    .project-overview h2 {
-      margin: 0 0 8px;
-      font-size: 1.25rem;
+      margin: 20px 0 28px;
     }
 
     .project-overview p {
-      margin: 0 0 10px;
       font-size: 0.96rem;
       line-height: 1.6;
       color: var(--text-muted);
@@ -105,7 +82,6 @@
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 16px;
-      margin-top: 4px;
     }
 
     .materials-grid {
@@ -116,7 +92,6 @@
 
     .material-card {
       padding: 24px 22px 22px;
-      text-align: left;
     }
 
     .material-icon {
@@ -148,29 +123,15 @@
       border-radius: 999px;
       background: var(--primary);
       color: white;
-      text-decoration: none;
       font-size: 0.93rem;
       font-weight: 500;
-      border: 1px solid transparent;
-      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+      text-decoration: none;
       box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
     }
 
     .primary-link:hover {
       background: #1e40af;
       transform: translateY(-1px);
-      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.26);
-    }
-
-    .primary-link:active {
-      transform: translateY(0);
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.22);
-    }
-
-    .note {
-      font-size: 0.83rem;
-      color: var(--text-muted);
-      margin-top: 6px;
     }
 
     footer {
@@ -181,79 +142,73 @@
     }
   </style>
 </head>
+
 <body>
   <div class="page">
-    <!-- BACK TO MAIN PAGE -->
-    <!-- TODO: Ensure index.html exists at the same level so this link works -->
-    <a class="back-link" href="index.html">
-      <span>←</span> Back to Home
-    </a>
+
+    <a class="back-link" href="index.html">← Back to Home</a>
 
     <header>
       <h1>AI Class Project</h1>
-      <!-- TODO: Adjust the course title/semester if needed -->
       <p>Artificial Intelligence in Economics | Fall 2024</p>
     </header>
 
-    <!-- PROJECT OVERVIEW -->
     <section class="card project-overview">
       <h2>Project Overview</h2>
-
-      <!-- TODO: Replace these placeholder sentences with 3–5 sentences describing your actual project -->
       <p>
-        This project explores how artificial intelligence tools can be used to analyze economic data and
-        support decision-making in business and policy contexts.
+        This project analyzes the U.S. fashion industry through an economic and technological lens,
+        with a focus on how artificial intelligence affects labor, production, and strategic decision-making.
       </p>
       <p>
-        Using a combination of machine learning models and econometric techniques, the project examines
-        patterns in real or simulated datasets and evaluates the predictive power of different approaches.
+        Industry employment data and AI adoption trends are used to evaluate how a mature industry
+        adapts to digital transformation and efficiency-driven growth.
       </p>
       <p>
-        The goal is to demonstrate how AI methods can complement traditional economic analysis, highlight
-        their limitations, and reflect on the ethical implications of data-driven decision-making.
+        The project connects data-driven insights with broader economic implications and professional skill development.
       </p>
     </section>
 
-    <!-- PROJECT MATERIALS -->
     <section>
       <h2 class="materials-heading">Project Materials</h2>
 
       <div class="materials-grid">
-        <!-- PRESENTATION CARD -->
+
+        <!-- PRESENTATION -->
         <article class="card material-card">
-          <div class="material-icon" aria-hidden="true">📊</div>
+          <div class="material-icon">📊</div>
           <h3 class="material-title">Presentation Slides</h3>
           <p class="material-desc">
-            View the slide deck summarizing the research questions, methods, key findings, and takeaways.
+            Slide deck summarizing the research question, methodology, and findings.
           </p>
-          <!-- TODO: Replace "#" with the actual link to your slides once available
-               e.g., "slides.pdf" or a Google Slides share URL. -->
           <a class="primary-link" href="#" aria-disabled="true">
-            View Presentation
+            Slides Coming Soon
           </a>
-          <p class="note">(Slides will be uploaded soon.)</p>
         </article>
 
-        <!-- REPORT CARD -->
+        <!-- REPORT -->
         <article class="card material-card">
-          <div class="material-icon" aria-hidden="true">📝</div>
-          <h3 class="material-title">Project Report</h3>
+          <div class="material-icon">📝</div>
+          <h3 class="material-title">U.S. Fashion Industry Report</h3>
           <p class="material-desc">
-            Read the full written report detailing the data, methodology, model performance, and conclusions.
+            Full written report analyzing industry structure, employment trends, and AI impacts.
           </p>
-          <!-- TODO: Ensure project.pdf exists in the same folder as project.html,
-               or update the href path accordingly. -->
-          <a class="primary-link" href="project.pdf" target="_blank" rel="noopener">
+
+          <!-- IMPORTANT: exact filename with encoded spaces -->
+          <a class="primary-link"
+             href="./US%20Fashion%20Industry%20Report.%20pdf"
+             target="_blank"
+             rel="noopener">
             View Report
           </a>
         </article>
+
       </div>
     </section>
 
     <footer>
-      <!-- Optional footer text -->
-      ©️ 2025 <!-- TODO: Replace with your name -->Your Name
+      © 2025 Krisha Mehra
     </footer>
+
   </div>
 </body>
 </html>
