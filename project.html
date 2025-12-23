@@ -5,60 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Class Project | Krisha Mehra</title>
 
+  <!-- Google Font (matches main page) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --primary: #1d4ed8;
+      --primary-soft: #e0ebff;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+      --radius-lg: 18px;
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: "Inter", system-ui, sans-serif;
-      background: #f5f7fb;
-      color: #111827;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
     }
 
     .page {
-      max-width: 900px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 24px;
+      padding: 24px 16px 56px;
     }
 
-    a {
-      color: #1d4ed8;
-      text-decoration: none;
-      font-weight: 500;
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
     }
 
-    a:hover {
-      text-decoration: underline;
+    header h1 {
+      margin: 0 0 4px;
+      font-size: clamp(2rem, 3vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-muted);
     }
 
     .card {
-      background: white;
-      border-radius: 14px;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border);
+    }
+
+    .project-overview {
       padding: 24px;
-      margin-top: 24px;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      margin-top: 20px;
+      margin-bottom: 28px;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 18px;
-      background: #1d4ed8;
-      color: white;
+    .project-overview h2 { margin: 0 0 8px; font-size: 1.25rem; }
+
+    .project-overview p {
+      margin: 0 0 10px;
+      font-size: 0.96rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .materials-heading {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      margin-top: 4px;
+    }
+
+    .materials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .material-card { padding: 24px 22px 22px; }
+
+    .material-icon {
+      width: 60px;
+      height: 60px;
       border-radius: 999px;
+      background: var(--primary-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      font-size: 1.6rem;
     }
 
-    .button:hover {
+    .material-title { margin: 0 0 6px; font-weight: 600; }
+
+    .material-desc {
+      margin: 0 0 18px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .primary-link {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-size: 0.93rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+      margin-right: 10px;
+      margin-top: 6px;
+    }
+
+    .primary-link:hover {
       background: #1e40af;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.26);
       text-decoration: none;
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 32px;
       font-size: 0.8rem;
-      color: #6b7280;
+      color: var(--text-muted);
       text-align: center;
     }
   </style>
@@ -66,57 +154,66 @@
 
 <body>
   <div class="page">
+    <a class="back-link" href="index.html"><span>←</span> Back to Home</a>
 
-    <a href="index.html">← Back to Home</a>
+    <header>
+      <h1>AI Class Project</h1>
+      <p>Artificial Intelligence in Economics | Fall 2024</p>
+    </header>
 
-    <h1>AI Class Project</h1>
-    <p>Artificial Intelligence in Economics | Fall 2024</p>
-
-    <section class="card">
+    <section class="card project-overview">
       <h2>Project Overview</h2>
       <p>
-        This project analyzes the U.S. fashion industry with a focus on employment trends and the
-        impact of artificial intelligence on a mature industry.
+        This project analyzes the U.S. fashion industry through an economic and technological lens,
+        focusing on employment trends and the impact of artificial intelligence on a mature industry.
       </p>
       <p>
-        Industry data are used to evaluate how firms adapt to efficiency-driven growth and
-        digital transformation.
+        Industry data are used to evaluate how firms adapt to efficiency-driven growth and digital transformation,
+        and what these shifts imply for future roles in marketing, analytics, and strategy.
+      </p>
+      <p>
+        The project connects data-driven insights with broader economic implications and professional skill development.
       </p>
     </section>
 
-    <section class="card">
-      <h2>Project Materials</h2>
+    <section>
+      <h2 class="materials-heading">Project Materials</h2>
 
-      <h3>U.S. Fashion Industry Report</h3>
-      <p>
-        Full written report analyzing industry structure, employment trends, and AI impacts.
-      </p>
+      <div class="materials-grid">
+        <article class="card material-card">
+          <div class="material-icon" aria-hidden="true">📊</div>
+          <h3 class="material-title">Presentation Slides</h3>
+          <p class="material-desc">
+            View the slide deck summarizing the research questions, methods, key findings, and takeaways.
+          </p>
+          <a class="primary-link" href="#" aria-disabled="true">Slides Coming Soon</a>
+        </article>
 
-      <!-- SAFEST POSSIBLE LINK -->
-      <a
-        class="button"
-        href="US%20Fashion%20Industry%20Report.pdf"
-        target="_blank"
-        rel="noopener"
-      >
-        Open Report
-      </a>
+        <article class="card material-card">
+          <div class="material-icon" aria-hidden="true">📝</div>
+          <h3 class="material-title">U.S. Fashion Industry Report</h3>
+          <p class="material-desc">
+            Read the full report detailing industry structure, employment trends, and AI impacts.
+          </p>
 
-      <br /><br />
+          <!-- IMPORTANT: filename includes a space BEFORE .pdf -->
+          <a class="primary-link"
+             href="US%20Fashion%20Industry%20Report%20.pdf"
+             target="_blank"
+             rel="noopener">
+            View Report
+          </a>
 
-      <a
-        class="button"
-        href="US%20Fashion%20Industry%20Report.pdf"
-        download
-      >
-        Download Report
-      </a>
+          <a class="primary-link"
+             href="US%20Fashion%20Industry%20Report%20.pdf"
+             download>
+            Download Report
+          </a>
+        </article>
+      </div>
     </section>
 
-    <footer>
-      © 2025 Krisha Mehra
-    </footer>
-
+    <footer>©️ 2025 Krisha Mehra</footer>
   </div>
 </body>
 </html>
