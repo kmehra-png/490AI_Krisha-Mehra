@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Krisha Mehra | Managerial Economics & AI</title>
 
-  <!-- Google Font (optional) -->
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -39,7 +39,9 @@
       padding: 24px 16px 56px;
     }
 
-    header { margin-bottom: 24px; }
+    header {
+      margin-bottom: 24px;
+    }
 
     header h1 {
       margin: 0;
@@ -95,7 +97,9 @@
       color: var(--text-muted);
     }
 
-    .about-text p:last-child { margin-bottom: 0; }
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
 
     .sections {
       margin-top: 28px;
@@ -106,7 +110,6 @@
 
     .section-card {
       padding: 24px 22px 22px;
-      text-align: left;
     }
 
     .section-icon {
@@ -141,22 +144,15 @@
       text-decoration: none;
       font-size: 0.93rem;
       font-weight: 500;
-      border: 1px solid transparent;
-      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
-      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
       margin-right: 10px;
       margin-top: 6px;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+      transition: background 0.15s ease, transform 0.15s ease;
     }
 
     .primary-link:hover {
       background: #1e40af;
       transform: translateY(-1px);
-      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.26);
-    }
-
-    .primary-link:active {
-      transform: translateY(0);
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.22);
     }
 
     footer {
@@ -167,10 +163,12 @@
     }
 
     @media (max-width: 720px) {
-      .about { flex-direction: column; }
+      .about {
+        flex-direction: column;
+      }
+
       .profile-photo {
         width: 150px;
-        max-width: 100%;
         margin: 0 auto;
       }
     }
@@ -186,56 +184,55 @@
 
     <section class="card about">
       <div class="profile-photo">
-        Profile photo<br>(replace this box with an image)
+        Profile photo<br>(replace with image)
       </div>
 
       <div class="about-text">
         <h2>About Me</h2>
-
         <p>
           Welcome! I'm a Managerial Economics student at UMass Amherst with a strong interest in
           artificial intelligence, data analysis, and their applications in business and economics.
         </p>
-
         <p>
           I enjoy using data-driven insights and emerging technologies to understand markets,
-          evaluate decisions, and solve complex problems. This site highlights my coursework,
-          projects, and experience at the intersection of economics and AI.
+          evaluate decisions, and solve complex problems.
         </p>
-
         <p>
-          Feel free to explore my resume and class projects below to learn more about my background.
+          Feel free to explore my resume and projects below.
         </p>
       </div>
     </section>
 
     <section class="sections">
 
-      <!-- RESUME CARD -->
+      <!-- RESUME -->
       <article class="card section-card">
-        <div class="section-icon" aria-hidden="true">📄</div>
+        <div class="section-icon">📄</div>
         <h3 class="section-title">Resume</h3>
         <p class="section-desc">
-          View my academic background, work experience, and skills related to economics, data analysis, and AI.
+          View or download my resume highlighting my academic background and skills.
         </p>
 
-        <!-- VIEW RESUME -->
-        <a class="primary-link" href="Final-Krisha-Mehra-Resume.pdf" target="_blank" rel="noopener">
+        <a class="primary-link"
+           href="./Final-Krisha%20Mehra%20Resume.pdf"
+           target="_blank"
+           rel="noopener">
           View Resume
         </a>
 
-        <!-- DOWNLOAD RESUME -->
-        <a class="primary-link" href="Final-Krisha-Mehra-Resume.pdf" download>
+        <a class="primary-link"
+           href="./Final-Krisha%20Mehra%20Resume.pdf"
+           download>
           Download Resume
         </a>
       </article>
 
-      <!-- PROJECTS CARD -->
+      <!-- PROJECTS -->
       <article class="card section-card">
-        <div class="section-icon" aria-hidden="true">💻</div>
+        <div class="section-icon">💻</div>
         <h3 class="section-title">Projects</h3>
         <p class="section-desc">
-          Explore my AI in Economics class project and other academic work applying AI and data to real problems.
+          Explore my AI in Economics class project and other academic work.
         </p>
         <a class="primary-link" href="project.html">
           View Projects
@@ -245,7 +242,7 @@
     </section>
 
     <footer>
-      ©️ 2025 Krisha Mehra
+      © 2025 Krisha Mehra
     </footer>
   </div>
 </body>
