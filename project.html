@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Class Project | Krisha Mehra</title>
+  <title>Projects | Krisha Mehra</title>
 
-  <!-- Google Font (matches main page) -->
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -76,7 +76,10 @@
       margin-bottom: 28px;
     }
 
-    .project-overview h2 { margin: 0 0 8px; font-size: 1.25rem; }
+    .project-overview h2 {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
+    }
 
     .project-overview p {
       margin: 0 0 10px;
@@ -89,7 +92,6 @@
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 16px;
-      margin-top: 4px;
     }
 
     .materials-grid {
@@ -126,22 +128,12 @@
       border-radius: 999px;
       background: var(--primary);
       color: white;
-      text-decoration: none;
       font-size: 0.93rem;
       font-weight: 500;
-      border: 1px solid transparent;
-      transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
       box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
-      margin-right: 10px;
-      margin-top: 6px;
     }
 
-    .primary-link:hover {
-      background: #1e40af;
-      transform: translateY(-1px);
-      box-shadow: 0 10px 24px rgba(37, 99, 235, 0.26);
-      text-decoration: none;
-    }
+    .primary-link:hover { background: #1e40af; }
 
     footer {
       margin-top: 32px;
@@ -154,66 +146,85 @@
 
 <body>
   <div class="page">
-    <a class="back-link" href="index.html"><span>←</span> Back to Home</a>
+
+    <a class="back-link" href="index.html">← Back to Home</a>
 
     <header>
       <h1>AI Class Project</h1>
-      <p>Artificial Intelligence in Economics | Fall 2024</p>
+      <p>AI in Economics | Fall 2025</p>
     </header>
 
+    <!-- PROJECT OVERVIEW -->
     <section class="card project-overview">
       <h2>Project Overview</h2>
+
       <p>
-        This project analyzes the U.S. fashion industry through an economic and technological lens,
-        focusing on employment trends and the impact of artificial intelligence on a mature industry.
+        This project analyzes the U.S. fashion industry to examine how artificial intelligence is
+        reshaping a mature, highly globalized consumer sector. Using industry sales data, employment
+        trends, and trade statistics, it evaluates how AI adoption influences production efficiency,
+        labor demand, and competitive strategy.
       </p>
+
       <p>
-        Industry data are used to evaluate how firms adapt to efficiency-driven growth and digital transformation,
-        and what these shifts imply for future roles in marketing, analytics, and strategy.
+        Drawing on data from sources such as the Bureau of Labor Statistics, BEA, and FRED, the project
+        highlights the long-term decline in domestic apparel manufacturing employment and the growing
+        role of automation, data analytics, and AI-driven forecasting across the fashion value chain.
       </p>
+
       <p>
-        The project connects data-driven insights with broader economic implications and professional skill development.
+        The analysis further explores how AI changes skill requirements and career pathways in areas
+        such as marketing, merchandising, and supply-chain management, demonstrating how technology
+        complements human decision-making rather than fully replacing it.
       </p>
     </section>
 
+    <!-- PROJECT MATERIALS -->
     <section>
       <h2 class="materials-heading">Project Materials</h2>
 
       <div class="materials-grid">
+
+        <!-- PRESENTATION -->
         <article class="card material-card">
-          <div class="material-icon" aria-hidden="true">📊</div>
-          <h3 class="material-title">Presentation Slides</h3>
+          <div class="material-icon">📊</div>
+          <h3 class="material-title">AI Presentation</h3>
           <p class="material-desc">
-            View the slide deck summarizing the research questions, methods, key findings, and takeaways.
+            A visual summary of the U.S. fashion industry analysis, highlighting market structure,
+            employment trends, and the role of AI in forecasting, design, and supply-chain optimization.
           </p>
-          <a class="primary-link" href="#" aria-disabled="true">Slides Coming Soon</a>
+          <a
+            class="primary-link"
+            href="AI%20Presentation%20.pdf"
+            download
+          >
+            Download Presentation
+          </a>
         </article>
 
+        <!-- REPORT -->
         <article class="card material-card">
-          <div class="material-icon" aria-hidden="true">📝</div>
+          <div class="material-icon">📝</div>
           <h3 class="material-title">U.S. Fashion Industry Report</h3>
           <p class="material-desc">
-            Read the full report detailing industry structure, employment trends, and AI impacts.
+            A comprehensive written report analyzing industry structure, employment dynamics,
+            and the economic implications of AI adoption in U.S. fashion.
           </p>
-
-          <!-- IMPORTANT: filename includes a space BEFORE .pdf -->
-          <a class="primary-link"
-             href="US%20Fashion%20Industry%20Report%20.pdf"
-             target="_blank"
-             rel="noopener">
-            View Report
-          </a>
-
-          <a class="primary-link"
-             href="US%20Fashion%20Industry%20Report%20.pdf"
-             download>
+          <a
+            class="primary-link"
+            href="US%20Fashion%20Industry%20Report%20.pdf"
+            download
+          >
             Download Report
           </a>
         </article>
+
       </div>
     </section>
 
-    <footer>©️ 2025 Krisha Mehra</footer>
+    <footer>
+      ©️ 2025 Krisha Mehra
+    </footer>
+
   </div>
 </body>
 </html>
